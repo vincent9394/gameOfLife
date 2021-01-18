@@ -1,0 +1,583 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    position: relative;
+}
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+#container-fluid{
+    height: 500px;
+    width: 100%;
+    padding: 0;
+}
+
+.image{
+    max-height: 100vh;
+}
+
+
+.container.dashline{
+    background-color: white;
+    height: 2px;
+    width: 80px;
+    margin: 0 5px 20px;
+}
+
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    
+}
+.name-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.dashline-container{
+    display: flex;
+    align-items: center;
+}
+
+#text-title-container{
+    display:flex;
+    flex-direction: row;
+}
+
+
+.section-container1{
+    background-color: rgb(238,238,238);
+    padding-bottom: 80px;
+}
+
+.section-container2{
+    background-color: rgb(255,255,255);
+    padding-bottom: 80px;
+}
+
+.section-container3{
+    background-color: rgb(37,37,41);
+    padding-bottom: 80px;
+    color: rgb(242,242,242);
+
+}
+
+.content-container{
+    max-width: 70%;
+
+    
+}
+
+
+.container.dashline.next-to-title{
+    background-color: rgb(53,53,53);
+    margin: 0 5px 13px;
+}
+
+.text-title{
+    color: rgb(53,53,53);
+}
+
+.content-wrapper{
+    margin-top: 40px;
+    
+}
+
+.box{
+display: block;  
+
+
+}
+.text-main-title{
+    color: #3377cc;
+    
+}
+.text-second-title{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(94,149,92);
+    font-weight: bold;
+    margin:0;
+    line-height: 1.2em;
+}
+
+.text-second-title.location{
+    color: rgb(80,85,92);
+
+}
+
+
+
+
+.main-text{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(80,85,92);
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.name-container.block-sections{
+    margin-top: 80px;
+}
+
+.btn-secondary{
+    background-color:rgb(105,119,134);
+    border-radius: .4rem;
+}
+
+.btn-sm {
+    padding: .23rem .4rem;
+    font-size: .700rem;
+    line-height: 1.7;
+}
+
+.work-logo{
+    background-color: rgb(255,255,255);
+    height: 100%;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.logo{
+    color: black;
+    padding: 20px;
+}
+
+.motto{
+    color: rgb(102,119,136);
+    text-align: center;
+}
+
+.image-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    padding:0;
+}
+.image-box{
+    max-width: 16%;
+}
+
+@media (min-width: 1060px){
+    .background{
+        height: 120vh;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        transform: translateY(-65px) translateZ(-1px) scale(2.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+}
+
+@media (max-width: 1059px){
+    .background{
+        height: 120vw;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+}
+
+/* translateZ and scale itself will expand the image outside of the div */
+/* You would need a wrapper div to wrap the content */
+/* set height of vh will span the height on screen */
+/* overflow-x overflow-y will hide the overflown part from the scale */
+/*  1 + (translateZ * -1) / perspective. but to add more effect, scale it up a bit */
+/* need to translate Y a bit as the image will have no upper boundary as scrolled up */
+.wrapper {
+    overflow: hidden;
+    perspective: 1px;
+  }
+
+
+.image-1{
+    background-image: url(personal.JPG);
+}
+.image-2{
+    background-image: url(macchu.JPG);
+}
+.image-3{
+    background-image: url(./images/game_of_life.jpg);
+    /* position: relative; */
+}
+.box-container{
+    position: absolute;
+}
+
+.up-dwn-btn{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(53,53,53);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border-width:0;
+    transition: 0.3s;
+
+
+    z-index:2;
+    
+}
+
+
+
+a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(109, 107, 107);
+}
+
+a:active{
+    text-decoration: none;
+}
+
+.up-dwn-btn.up-btn{
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+}
+
+.up-dwn-btn.dwn-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
+.up-btn i{
+    padding-top: 8px;
+}
+
+.dwn-btn i{
+    padding-bottom: 8px;
+}
+
+
+.project{
+    height: 30vw !important;
+}
+
+.proj-image-1{
+    background-image: url(https://www.youtube.com/watch?v=CgOcEZinQ2I&feature=youtu.be);
+}
+
+.proj-image-2{
+    background-image: url(proj2.jpg);
+}
+
+.proj-image-3{
+    background-image: url(proj3.jpeg);
+}
+
+.proj-type{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+}
+
+.view-more-btn-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.view-more-btn{
+    border: 2px solid rgb(105,119,134);
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s;
+    
+    
+}
+
+a {color: inherit;
+} 
+
+
+
+.in-grid-btn:hover{
+    text-decoration: none;
+    color: black !important;
+    background-color: white !important;
+    border-color: rgb(255,255,255);
+
+}
+
+.view-more-btn:hover{
+    text-decoration: none;
+    background-color: rgb(105,119,134);
+    color: white;
+}
+
+
+.small, small.in-grid-text{
+    font-size: 60%;
+    line-height: 32px;
+}
+
+.view-more-btn-text{
+    line-height: 49px;
+}
+
+.grid-background{
+    height: 20vw;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: flex !important;
+    align-items: center !important;
+    transition: all 0.3s;
+    
+}
+
+
+/* transition is put at the class being affected */
+/* should do visibility hidden > visible */
+/* background color can be none to have something */
+.caption-box{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    transition: all 0.2s ease-out;
+}
+
+/* for white text, should do white more transparent to less transparent */
+/* if none, it starts from 0 which is black */
+.captions{
+    width: 100%;
+    color: rgb(255,255,255,0.1);
+    text-align: center;
+    visibility: hidden;
+    transition: all 0.2s ease-out;
+    
+}
+
+.grid-background:hover .caption-box{
+    visibility: visible;
+    background-color: rgb(0,0,0,0.8);
+    
+    
+}
+
+.grid-background:hover{
+    -webkit-filter: grayscale(100%)!important;
+    filter: grayscale(100%) !important;
+    
+    
+}
+
+
+.grid-background:hover .captions{
+    visibility: visible;
+    color: rgb(255,255,255);
+}
+
+.grid-background:hover .in-grid-btn{
+    visibility: visible;
+    border-color: rgb(255,255,255);
+}
+
+.in-grid-btn{
+    height: 33px;
+    width: 133px;
+    visibility: hidden;
+    transition: all 0.2s ease-out;
+
+    
+}
+
+.grid-image-1{
+    background-image: url(Photos/girl.jpg);
+
+
+}
+
+.grid-image-2{
+    background-image: url(Photos/plitvice.jpg);
+
+}
+
+.grid-image-3{
+    background-image: url(Photos/puno.jpg);
+    
+}
+
+.grid-image-4{
+    background-image: url(Photos/dawn.jpg);
+    
+}
+
+.grid-image-5{
+    background-image: url(Photos/cng.jpg);
+    
+}
+
+.grid-image-6{
+    background-image: url(Photos/hvar.jpg);
+    
+}
+
+.grid-image-7{
+    background-image: url(Photos/bangla.jpg);
+    
+}
+
+.grid-image-8{
+    background-image: url(Photos/llama.jpg);
+    
+}
+
+.grid-image-9{
+    background-image: url(Photos/pubcrawl.jpg);
+    
+}
+
+.name-container.footer{
+    margin-top: 40px;
+}
+
+.footer-title{
+    color: white;
+}
+
+.container.dashline.next-to-title.footer-dash{
+    background-color: white;
+}
+
+.motto-footer{
+    color: white;
+    text-align: center;
+}
+
+.h3, h3 {
+    text-align: center;
+}
+
+.game1-nav> a:hover{
+    
+    color: rgb(103, 41, 219);
+
+}
+.game1-nav{
+    display: flex;
+    margin-top: 80px;
+    padding-right: 20px;
+    padding-left: 6px;
+    letter-spacing: 1.5px;
+}
+
+.nav-link{
+    text-align: center;
+
+}
+
+.nav-link > a{
+    transition: 0.3s;
+}
+.nav-link > a:hover{
+    color: rgb(105,119,134)
+}
+
+.nav-link h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+#nav-links{
+    margin-top: 20px;
+    padding-right: 20px;
+    padding-left: 6px;
+    letter-spacing: 1.5px;
+
+}
+
+
+
+
+.footer-link{
+    text-align: center;
+    
+    
+}
+
+.footer-link > a{
+    transition: 0.3s;
+}
+.footer-link > a:hover{
+    color: rgb(105,119,134)
+}
+
+.footer-link h6{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+#footer-links{
+    margin-top: 80px;
+    padding-right: 20px;
+    padding-left: 6px;
+    letter-spacing: 1.5px;
+}
+
+.disclaimer{
+    font-size: 8px;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 10px;
+
+    
+}
+
+#footer-logos{
+    display: flex;
+    justify-content: center;
+}
+
+.rule-span{
+    bottom: 40px;
+}
+
+.icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+#footer-logos > a{
+    transition: 0.3s;
+}
+

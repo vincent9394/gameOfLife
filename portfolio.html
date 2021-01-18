@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Vincent's Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" 
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+  crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Up down btn -->
+  <a href="#" class="up-dwn-btn up-btn" ><i class="fas fa-sort-up" id="up-btn"></i></a>
+  <a href="#" class="up-dwn-btn dwn-btn" ><i class="fas fa-sort-down" id="down-btn"></i></a>
+  <!-- Carousel -->
+
+  <div class="container-fluid p-0 wrapper">
+    <a name="home"></a>
+    <div class="background image-3">
+      <div class="row box-container">
+        <div class="col">
+          <div class="title-container">
+            <div>
+              <h3><i>Hello, I'm</i></h3>
+              <span id="height"></span>
+            <span id="width"></span>
+            </div>
+            <div class="row name-container">
+              <div class="dashline-container">
+                <div class="container dashline"></div>
+                <h1><strong>Vincent Luk</strong></h1>
+                <div class="dashline-container">
+                  <div class="container dashline"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid">
+    <div class="row" id="nav-links" data-aos="fade-up">
+      <div class="col-md-1">
+
+
+      </div>
+      <div class="col-md-2 nav-link">
+        <a href="portfolio.html#home">
+          <h6>HOME</h6>
+        </a>
+      </div>
+      <div class="col-md-2 nav-link">
+        <a href="portfolio.html#gol1">
+          <h6>Game of life 1</h6>
+        </a>
+      </div>
+      <div class="col-md-2 nav-link">
+        <a href="portfolio.html#gol2">
+          <h6>Game of life 2</h6>
+        </a>
+      </div>
+      <div class="col-md-2 nav-link">
+        <a href="portfolio.html#gol3">
+          <h6>Game of life 3</h6>
+        </a>
+        <div class="col-md-1">
+
+
+        </div>  
+      </div>
+      
+      <div class="col-md-2 nav-link">
+        <a href="portfolio.html#contact">
+          <h6>CONTACT</h6>
+        </a>
+      </div>
+    </div>
+
+  </div>
+ 
+
+  <!-- Blog -->
+  <div class="container-fluid section-container1">
+    <a name="gol1"></a>
+    <div class="container content-container">
+      <div class="row" data-aos="fade-up">
+        <div class="col">
+          <div class="container title-container text-title">
+            <div class="name-container block-sections">
+              <div class="dashline-container">
+                <div class="container dashline next-to-title"></div>
+              </div>
+              <h3><strong>Game of life 1</strong></h3>
+              
+              <div class="dashline-container">
+                <div class="container dashline next-to-title"></div>
+              </div>
+              
+            </div>
+            <h1>John Conway’s Game of Life   </h1> 
+          </div>
+        </div>
+      </div>
+    </div> 
+      <!-- <div class="container-fluid">
+        <div class="box" id='canvas'></div>
+      </div> -->
+     
+      
+
+    <div class="container content-container">  
+      <div class="row content-wrapper" data-aos="fade-up">
+        <div class="col-md-6">
+          <h3 class="text-main-title">Rules</h3>
+            
+            <h4 class="text-second-title"><strong>For a space that is populated:</strong></h4>
+        
+          <H5 class="main-text rule-span">
+            Each cell with one or no neighbors dies, as if by solitude.
+          </H5> 
+          <h5 class="main-text rule-span">
+            Each cell with four or more neighbors dies, as if by overpopulation.
+          </h5>
+          <h5 class="main-text rule-span">
+            Each cell with two or three neighbors survives.
+          </h5>
+          
+          <h4 class="text-second-title"><strong>For a space that is empty or unpopulated</strong></h4>
+          
+          <h5 class="main-text rule-span">
+            Each cell with three neighbors becomes populated.
+          </h5>
+        </div>
+        
+        <div class="col-md-6">
+          <img src="./images/steps.jpg" >
+        </div>
+      </div>
+      
+
+    </div>
+
+    <div class="box" id='canvas'></div>
+          <div class="row">
+                  <div class="col-md-2 game1-nav" id= 'reset-game'> <h3>restart</h3> </div>
+                  <div class="col-md-2 game1-nav" id ='pause'><h3>pause</h3></div>
+                  <div class="col-md-4 game1-nav"><p>Frame rate : 1    </p><input  type="range" id="frameValue" name="vol" min="1" max="100" value="1"><p>Now Value: <span id="fValue"></span></p> <p>(Remeber to restart to see the change)</p></div>
+      
+
+    </div>
+  </div>
+  <!-- Projects -->
+  <div class="container-fluid section-container2">
+    <a name="gol2"></a>
+    <div class="container-fluid">
+      <div class="row" data-aos="fade-up">
+        <div class="col">
+          <div class="container title-container text-title">
+            <div class="name-container block-sections">
+              <div class="dashline-container">
+                <div class="container dashline next-to-title"></div>
+              </div>
+              <h3><strong>Game of life 2</strong></h3>
+              <div class="dashline-container">
+                <div class="container dashline next-to-title"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"> <h2>Player 1</h2> </div>
+        <div class="col-md-6"> <h2>Player 2</h2> </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+           <div class="box" id = "p5sketch"></div>
+        </div>
+        <div class="col-md-6">
+          <div class="box" id = "p5sketch2"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 game1-nav" id= 'sketch-reset-game'> <h3>restart</h3> </div>
+        <div class="col-md-2 game1-nav" id ='sketch-pause'><h3>pause</h3></div>
+        <div class="col-md-4 game1-nav"><p>Frame rate : 1    </p><input  type="range" id="sketch-frameValue" name="vol" min="1" max="100" value="1"><p>Now Value: <span id="sketch-fValue"></span></p> <p>(Remeber to restart to see the change)</p></div>
+        
+  
+      </div>
+
+     
+      <div class="row content-wrapper">
+        <div class="col-md-6" data-aos="fade-right">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/CgOcEZinQ2I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     
+        </div>
+        
+        <div class="col-md-6" data-aos="fade-up">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/R9Plq-D1gEk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        
+      </div>
+
+      <div class="row content-wrapper view-more-btn-wrapper" data-aos="fade-up">
+
+        
+      <h2 class="view-more-btn-text">Thanks for the reference →  <a href="https://playgameoflife.com/" target="_blank">click here</a> </h2>
+       
+      </div>
+
+
+
+
+    </div>
+  </div>
+  <!-- Employment -->
+  <div class="container-fluid section-container1">
+      <a name="gol3"></a>
+    <div class="container content-container">
+      <div class="row" data-aos="fade-up">
+        <div class="col">
+          <div class="container title-container text-title">
+            <div class="name-container block-sections">
+              <div class="dashline-container">
+                <div class="container dashline next-to-title"></div>
+              </div>
+              <h3><strong>Game of life 3 </strong></h3>
+              <div class="dashline-container">
+                <div class="container dashline next-to-title"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="box" id = "vincentSketch"></div>
+
+    <div class="row">
+      <div class="col-md-2 game1-nav" id= 'vincentp5-reset-game'> <h3>restart</h3> </div>
+      <div class="col-md-2 game1-nav" id ='vincentp5-pause'><h3>pause</h3></div>      
+
+    </div>
+    <div class="container-fluid section-container1">
+      <h3 class="text-main-title">Lexicon</h3>
+        <h5>This Life lexicon is compiled by Stephen A. Silver from various sources and may be copied, modified and distributed under the terms of the Creative Commons Attribution-ShareAlike 3.0 Unported licence. See the original credit page for all credits and the original download location. The styling has been adjusted to fit this website.</h5>
+
+      <div class="row content-wrapper" data-aos="flip-left">
+        <div class="col-md-8">
+          <h5 class="text-main-title">101</h5>
+          <h6 class="text-second-title"><i>101 (p5) </i>      Found by Achim Flammenkamp in August 1994. The name was suggested by Bill Gosper, noting that the phase shown below displays the period in binary.</h6>
+                    
+        </div>
+        <div class="col-md-4">
+          <div class="container-fluid work-logo">
+            <img src="./images/101.jpg" class="Rounded Corners">
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row content-wrapper" data-aos="flip-right">
+        <div class="col-md-4">
+          <div class="container-fluid work-logo">
+            <img src="./images/119P4H1V0.jpg" class="img-fluid">
+
+          </div>
+        </div>
+        <div class="col-md-8">
+          <h5 class="text-main-title">119P4H1V0</h5>
+          <h6 class="text-second-title"><i>119P4H1V0 (c/4 orthogonally, p4)</i>     A spaceship discovered by Dean Hickerson in December 1989, the first spaceship of its kind to be found. Hickerson then found a small tagalong for this spaceship which could be attached to one side or both. These three variants of 119P4H1V0 were the only known c/4 orthogonal spaceships until July 1992 when Hartmut Holzwart discovered a larger spaceship, 163P4H1V0.</h6>
+          
+        </div>
+      </div>
+
+      <div class="row content-wrapper" data-aos="flip-up">
+        <div class="col-md-8">
+          <h5 class="text-main-title">1-2-3</h5>
+          <h6 class="text-second-title"><i>1-2-3 (p3) </i>      Found by Dave Buckingham, August 1972. This is one of only three essentially different p3 oscillators with only three cells in the rotor. The others are stillater and cuphook.
+          </h6>
+         
+        </div>
+        <div class="col-md-4">
+          <div class="container-fluid work-logo">
+            <img src="./images/1-2-3.jpg" class="img-fluid">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row content-wrapper" data-aos="flip-down">
+        <div class="col-md-4">
+          <div class="container-fluid work-logo">
+            <img src="./images/1-2-3-4.jpg" class="img-fluid">
+
+          </div>
+        </div>
+        <div class="col-md-8">
+          <h5 class="text-main-title">1-2-3-4</h5>
+          <h6 class="text-second-title"><i>1-2-3-4 (p4) </i>      See also Achim's p4.</h6>
+          
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+  
+  </div>
+  <footer>
+    <a name="contact"></a>
+    <div class="container-fluid section-container3">
+      <div class="container content-container">
+        <div class="row" data-aos="fade-up">
+          <div class="col">
+            <div class="container title-container footer-title">
+              <div class="name-container footer">
+                <div class="dashline-container">
+                  <div class="container dashline next-to-title footer-dash"></div>
+                </div>
+                <h3><strong>An apple a day keeps the fake news away</strong></h3>
+                <div class="dashline-container">
+                  <div class="container dashline next-to-title footer-dash"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="footer-links" data-aos="fade-up">
+          <div class="col-md-2 footer-link">
+            <a href="portfolio.html#home">
+              <h6>HOME</h6>
+            </a>
+          </div>
+          <div class="col-md-2 footer-link">
+            <a href="portfolio.html#gol1">
+              <h6>Game of life 1</h6>
+            </a>
+          </div>
+          <div class="col-md-2 footer-link">
+            <a href="portfolio.html#gol2">
+              <h6>Game of life 2</h6>
+            </a>
+          </div>
+          <div class="col-md-2 footer-link">
+            <a href="portfolio.html#gol3">
+              <h6>Game of life 3</h6>
+            </a>
+          </div>
+          
+          <div class="col-md-2 footer-link">
+            <a href="portfolio.html#contact">
+              <h6>CONTACT</h6>
+            </a>
+          </div>
+        </div>
+        <div>
+          <p class="disclaimer" data-aos="fade-up">
+              © 2020 Vincent Luk. All rights reserved. Fullstack Developer.
+          </p>
+        </div>
+        <div class="container" id="footer-logos" data-aos="fade-up">
+          <a href="#" class="icon">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="icon">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="#" class="icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>

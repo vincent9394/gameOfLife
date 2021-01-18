@@ -1,0 +1,23 @@
+
+.logo-header{
+   
+   
+    padding-top: 40px;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    
+}
+
+.img-full-width
+{
+  width: 100%;
+  z-index: 0;
+}
